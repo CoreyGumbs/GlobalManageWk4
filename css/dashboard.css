@@ -1,0 +1,429 @@
+#Ownertron{
+	width: 100%;
+	height: 310px;
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/nicehouse.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0;
+}
+
+h1{
+	position: relative;
+	top: 100px;
+	width: 600px;
+	font-size: 3em;
+	color: #fff;
+}
+
+section:nth-child(4){
+	background-color: #eee;
+	overflow: hidden;
+}
+
+#userBox{
+	position: relative;
+	bottom: -183px;
+	width: 120px;
+	height: 40px;
+	padding: 5px 20px;
+	font-size: 12px;
+	background-color: #3953a4;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	float: right;
+	z-index: -1px;
+}
+
+#userBox a{
+	color: #fff;
+}
+
+#dropMenus{
+	position: relative;
+	bottom: -157px;
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	color: #fff;
+	background-color:#2b2e4a;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+	z-index: 5;
+}
+
+#dropMenus ul{
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#dropMenus li {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#dropMenus li:nth-child(3){
+	margin-right: 20px;
+	padding: 12px;
+	float: right;
+}
+
+#dropMenus a{
+	color: #fff;
+}
+
+#dropMenus a:hover {
+	color: #0071bc;
+}
+
+#dropMenus p{
+	display: inline-block;
+	margin: 15px;
+	padding: 0;
+}
+
+#dashInfo{
+	width: 470px;
+	float: left;
+	overflow: hidden;
+}
+
+#financialInfo{
+	width: 470px;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	overflow: hidden;
+}
+#financialInfo h3{
+	width: 470px;
+	margin: 0;
+	padding: 15px 20px;
+	color: #3b54a4;
+}
+
+#donutchart{
+	padding:0;
+	margin: 0 0 2px 0;
+}
+
+#ownerReports{
+	width: 470px;
+	margin: 0 0 2px 0;
+	padding: 0;
+	background-color: #ccc;
+	overflow: hidden; 
+}
+
+#workBox{
+	width: 234.5px;
+	height: 230px;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	background-color: #111832;
+	color: #c9c9c9;
+	float: left;
+}
+
+#workBox h3{
+	font-size: 18px;
+	margin: 0;
+	padding: 10px 10px 0 10px;
+}
+
+#workBox ul{
+	list-style-type: none;
+	float: left;
+}
+
+#workBox ul:nth-child(2){
+	width: 180px;
+	margin: 0;
+	padding: 10px;
+}
+
+#workBox ul:nth-child(3){
+	width: 10px;
+	margin-left: 0px;
+	padding: 10px;
+	float: left;
+}
+
+#workBox li{
+	margin: 10px 0 5px 0;
+	padding: 0;
+	float: left;
+}
+
+#workBox a{
+	color: #fff;
+}
+
+#workBox a:hover{
+	color: #0071bc;
+}
+
+.workWarning{
+	color: #fbb03c;
+}
+
+.workComplete{
+	color: #24b574;
+}
+
+.workIssue{
+	color: #91384a;
+}
+
+#leaseBox{
+	width: 234.5px;
+	height: 230px;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	color: #c9c9c9;
+	background-color: #033a51;
+	float: right;
+}
+
+#leaseBox h3{
+	font-size: 18px;
+	margin: 0;
+	padding: 10px 10px 5px 10px;
+}
+
+#leaseBox ul{
+	list-style-type: none;
+	padding: 10px;
+	float: left;
+}
+
+#leaseBox li{
+	margin: 10px 0 3px 0;
+	float: left;
+}
+
+#leaseBox a{
+	color: #fff;
+}
+
+#leaseBox a:hover{
+	color: #0071bc;
+}
+
+#propertyManager{
+	width: 470px;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	overflow: hidden;
+}	
+
+#propertyManager h3{
+	width: 470px;
+	margin: 10px 0 0 0;
+	padding: 10px 20px;
+	color: #3b54a4;
+}
+
+#managerImg{
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#managerImg img{
+	width: 120px;
+	height: 120px;
+	margin: 0;
+	padding: 20px;
+	border-radius: 100%;
+}
+
+#managerBox{
+	width: 275px;
+	margin: 0 10px 0 0;
+	padding: 15px 10px;
+	float: right;
+}
+
+#managerBox h2{
+	font-size: 26px;
+}
+
+#managerBox h3{
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-style: italic;
+	color: #333;
+}
+
+#managerBox ul{
+	list-style-type: none;
+}
+
+#contactType{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	color: #3b54a4;
+	float: left;
+}
+
+#contactNum{
+	font-size: 14px;
+	text-align: right;
+	float: right;
+}
+
+
+#dashProperties{
+	width: 482px;
+	margin: 0;
+	padding: 0;
+	float: right;
+	overflow: hidden;
+}
+
+#dashGallery{
+	margin: 0;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+
+#dashGallery img{
+	width: 60px;
+	height: 50px;
+	margin: -1px -1.5px;
+	padding: 0;
+}
+
+#dashGallery ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#dashGallery li{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#vacancyBox{
+	width: 240px;
+	height: 202px;
+	margin:0;	
+	padding: 0;
+	background-color: #91384a;
+	color: #fff;
+	float: right;
+	overflow: hidden;
+}
+
+#vacancyBox h1{
+	position: relative;
+	top: -20px;
+	width: 50px;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 7em;
+}
+
+#vacancyBox h2{
+	position: relative;
+	top: -40px;
+	width: 50px;
+	margin: 0 auto;
+	padding: 10px 20px;	
+	color: #c9c9c9;
+}
+
+#vacancyBox h3{
+	margin: 0;
+	padding: 10px;
+}
+
+#myProperties{
+	width: 480px;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+	overflow: scroll;
+
+}
+
+.myRental{
+	width: 465px;
+	height: 150px;
+	margin: 0 auto 2px auto;
+	padding: 0;
+	background-color: #111832;
+	background-image: linear-gradient(rgba(17, 24, 50, 0.9), rgba(17, 24, 50, 0.9)),  url('../images/apt_jumbo2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0;
+}
+
+.myRental:nth-child(even){
+	background-color: #332e3e;
+	background-image: linear-gradient(rgba(83, 54, 74, 0.9), rgba(83, 54, 74, 0.9)),  url('../images/bldg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0;
+}
+
+.priceCircle{
+	width: 100px;
+	height: 100px;
+	margin: 25px 10px 25px 0;
+	padding: 0;
+	text-align: center;
+	border-radius: 100%;
+	background-color: #24b574;
+	float: right;
+}
+
+.priceCircle h2{
+	margin: 25px 0 0 0;
+	padding: 0;
+	color: #fff;
+}
+
+.priceCircle p{
+	font-size: 14px;
+	color: #fff;
+}
+
+.vacant{
+	background-color: #91384a;
+}
+
+.rentalHeading{
+	width: 330px;
+	margin: 40px 0 35px 25px;
+	padding: 0;
+	float: left;
+}
+
+.rentalHeading h2{
+	margin:0;
+	padding: 0;
+	font-size: 22px;
+	color: #fff;
+}
+
+.rentalHeading h3{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: #c9c9c9;
+}

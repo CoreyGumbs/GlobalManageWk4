@@ -1,0 +1,310 @@
+
+#galleryContainer{
+	height: 370px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#mainPic{
+	float: left;
+}
+
+#mainPic img{
+	width: 482px;
+	height: 370px;
+}
+
+#subPic{
+	width: 470px;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+#subPic ul{
+	width: 470px;
+	height: 370px;
+	list-style-type: none;
+}
+
+#subPic li{
+	display: inline-block;
+	margin: 0 3px 0 0;
+	padding: 0;
+	float: left;
+}
+
+#subPic img{
+	width: 232px;
+	height: 184px;
+}
+
+#subPic li:nth-child(even){
+	margin-rigth: 0;
+	float: right;
+}
+
+#listingContent{
+	background-color: #F1F1F1;
+	overflow: hidden;
+}
+
+#addressSection{
+	width: 470px;
+	margin: 30px 0;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+
+#priceCircle{
+	width: 120px;
+	height: 120px;
+	margin: 0;
+	padding: 0;
+	border-radius: 100%;
+	background-color: #24b574;
+	float: left;
+	overflow: hidden;
+}
+
+#priceCircle h1{
+	margin: 35px 0 0 0;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+}
+#priceCircle p{
+	text-align: center;
+	color: #fff;
+}
+
+#addressHeader{
+	width: 330px;
+	margin: 10px 0;
+	padding: 0;
+	float: right;
+	clear: right;
+}
+
+#addressHeader h1{
+	font-size: 32px;
+	color: #273a71;
+}
+#addressHeader h2{
+	padding: 0;
+	font-size: 22px;
+	color: #273a71;
+}
+#addressHeader h3{
+	margin: 10px 0 10px 0;
+	padding: 0;
+	font-size: 18px;
+	color: #666;
+}
+
+#descriptionBox{
+	width: 470px;
+	margin: 20px 0;
+	padding: 0;
+	line-height: 21px;
+	float: left;
+	clear: right;
+}
+
+#subsections{
+	width: 470px;
+	margin: 20px 0;
+	padding: 0;
+	float: left;
+	clear: right;
+}
+
+#amenities, #surroundArea{
+	width: 220px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#amenities{
+	margin-right: 30px;
+}
+
+#amenities h3, #surroundArea h3{
+	width: 220px;
+	margin: 0 0 10px 0;
+	color: #3b54a4;
+}
+
+#surroundArea ul, #amenities ul{
+	list-style-type: none;
+}
+
+#amenities li, #surroundArea li{
+	display: block;
+	width: 220px;
+	margin: 10px 0;
+	color: #666;
+}
+
+#amenities i, #surroundArea i{
+	color: #3b54a4;
+}
+
+#sideSection{
+	float: right;
+}
+
+#mapBox{
+	margin: 30px 0 20px 0;
+	padding: 0;
+}
+
+#applyBtn button{
+	width: 100%;
+	margin: 0 0 20px 0;
+	padding: 15px;
+	border: 0;
+	background-color: #24b574;
+	border-radius: 5px;
+	color: #fff;
+	outline: 0;
+}
+
+#applyBtn button:hover{
+	background-color: #005550;
+}
+
+#shareBox ul{
+	list-style-type: none;
+}
+
+#shareBox ul li{
+	text-align: center;
+}
+
+#shareBox a{
+	color: #162657;
+}
+
+#shareBox a:hover {
+	color: #0071bc;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 0px solid #888;
+    width: 560px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 5px;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close {
+		margin: -10px;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 10px 16px;
+    background-color: #0f1732;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.modal-body {
+	padding: 2px 16px; 
+	overflow: hidden;
+}
+
+.modal-body form{
+	width: 520px;
+
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.modal-body div + div {
+	margin-top: 10px;
+}
+
+.modal-body label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+.modal-body input{
+    padding: 5px;
+    margin-left: 10px;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #0f1732;
+    border-radius: 2px;
+    outline: none;
+}
+
+.modal-body input:focus{
+	border: 2px solid #0071bc;
+	background-color: #eee;
+	color: #666;
+}
+
+.modal-body button{
+	width: 150px;
+	margin: 20px 120px;
+	padding: 10px;
+	border: 0px;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #22b573;
+	float: right;
+	outline: none;
+}
+
+.modal-body button:hover{
+	background-color: #005550;
+}
