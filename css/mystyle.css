@@ -1,0 +1,150 @@
+
+
+#Jumbotron{
+	width: 100%;
+	height: 450px;
+	background-image: url('../images/apt_jumbo2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0;
+}
+
+#ctaBg{
+	width: 100%;
+	height: 160px;
+	margin-bottom: 0;
+	padding: 0;
+	/*background-color: #0f1732;*/
+	background-color: #eee;
+	border: 1px solid #ccc;	
+	border-left-width: 0;
+	border-right-width: 0;
+
+}
+
+.ctaBox{
+	position: relative;
+	top: -80px;
+	width: 260px;
+	height: 180px;
+	margin-right: 25px;
+	padding: 10px 20px;
+	border-radius: 20px 0;
+	background-color: #0f1732;
+	color: #fff;
+	float: left;
+}
+
+.ctaBox:hover{
+	background-color:#263971;
+	color: #eee;
+}
+/*
+.ctaBox:hover button{
+	background-color:#888;
+}*/
+
+.ctaBox:nth-child(3){
+	margin-right: 0;
+}
+
+.ctaBox h2 {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+.ctaBox p {
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.ctaBox button{
+	width: 150px;
+	padding: 10px;
+	border: 0px;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #22b573;
+	float: right;
+	outline: none;
+}
+
+.ctaBox button:hover{
+	background-color: #005550;
+}
+
+#contentBox{
+	width: 100%;
+	margin: 0;
+	padding:0;	
+}
+
+#messageContent{
+	width: 550px;
+	height: 300px;
+	margin: 30px 0;
+	padding: 0;
+	float: left;
+}
+
+#messageContent h2, #sideContent h2{
+	font-size: 24px;
+	color: #273a71;
+}
+
+#messageContent p{
+	margin-top: 20px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333;
+}
+
+#sideContent{
+	width: 350px;
+	margin: 30px 0;
+	float: right;
+}
+
+.propertyBox{
+	width: 350px;
+	height: 80px;
+	margin: 20px 0;
+	background-color: #f5f5f5;
+	border-radius: 0 5px 5px 0;
+	color: #333;
+}
+
+.propertyBox:nth-child(odd){
+	background-color: #eee;
+}
+
+.propertyBox img{
+	width: 120px;
+	height: 80px;
+	padding: 0;
+	border-radius: 5px 0 0 5px;
+	float: left;
+}
+.propertyBox p{
+	width: 200px;
+	height: 75px;
+	padding: 5px 10px;
+	font-size: 14px;
+	float: right;
+}
+
+.propertyBox a{
+	font-weight: bold;
+}
+
+#contentBox:after{
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+
+
+
+
+

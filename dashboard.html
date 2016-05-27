@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/HeaderFooter.css">
+	<link rel="stylesheet" href="css/dashboard.css">
+	<script src="https://use.fontawesome.com/5bfc929737.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Income & Expenses', 'Amount($)'],
+          ['Rent/Income',     120000],
+          ['Maintenance',      2000],
+          ['Taxes',  10000],
+          ['Insurance', 3000],
+          ['Management Fees',  2000],
+          ['Rehab Costs', 50000]
+        ]);
+
+        var options = {
+          title: 'Income & Expenses ($)',
+         	legend: 'left',
+          colors: ['#24b574', '#91384a', '#54364a', '#3953a4', '#fbb03c', '#b14549'],
+          pieHole: 0.3,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+	<title>Owner Dasboard | Global Manage Property Management</title>
+</head>
+<body>
+<!-- logo and navigation placement -->
+<header>
+	<div class="widthContainer">
+		<a href="index.html"><img src="images/logo.png" alt="Global Manage LLC Logo "></a>
+		<form action="">
+			<input type="search">
+			<button type="submit">Search</button>
+		</form>
+	</div>
+</header>
+<nav>
+	<div class="widthContainer">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html">Services</a></li>
+			<li><a href="listings.html">Properties</a></li>
+			<li><a href="index.html">Contact</a></li>
+			<li><a href="index.html">Log Out</a></li>
+		</ul>
+	</div>
+</nav>
+<!--Jumbotron-->
+<section id="Ownertron">
+	<div class="widthContainer">
+		<h1>Owner Dashboard</h1>
+		<div id="userBox">
+			<a href=""> Welcome, User Name</p>
+		</div>
+		<div id="dropMenus">
+			<ul>
+				<li>
+					<p>
+						<a href="index.html">My Account</a> | <a href="">File Upload</a> | <a href="">Settings</a>
+					</p>
+				</li>
+				<li>
+					<h2>May 26, 2016 </h2>
+				</li>			
+			</ul>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="widthContainer">
+		<div id="dashInfo">
+			<div id="financialInfo">
+				<h3>Financial Report:</h3>
+			</div>
+			<div id="donutchart" style="width: 470px; height: 200px;"></div>
+			<div id="ownerReports">
+				<div id="workBox">
+					<h3>Work Orders</h3>
+					<ul>
+						<li><a href="#">#200 Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#">#050 Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#">#203 Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#">#146 Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#">#390 Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#">#001 Lorem ipsum dolor sit amet</a></li>
+					</ul>
+					<ul>
+						<li><i class="fa fa-circle workIssue" aria-hidden="true"></i></li>
+						<li><i class="fa fa-circle workWarning" aria-hidden="true"></i></li>
+						<li><i class="fa fa-circle workIssue" aria-hidden="true"></i></li>
+						<li><i class="fa fa-circle workWarning" aria-hidden="true"></i></li>
+						<li><i class="fa fa-circle workComplete" aria-hidden="true"></i></li>
+						<li><i class="fa fa-circle workComplete" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+				<div id="leaseBox">
+					<h3>Leases</h3>
+					<ul>
+						<li><a href="">Lorem ipsum dolor.pdf</a></li>
+						<li><a href="">Lorem ipsum dolor.pdf</a></li>
+						<li><a href="">Lorem ipsum dolor consec.pdf</a></li>
+						<li><a href="">Lorem ipsum dolor sit amet.pdf</a></li>
+						<li><a href="">Lorem ipsum dolor.pdf</a></li>
+						<li><a href="">Lorem ipsum.pdf</a></li>
+						<li><a href="">Lorem ipsum.pdf</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="propertyManager">
+					<h3>Contact:</h3>
+				<div id="managerImg">
+					<img src="images/gilfoyle.jpg" alt="">
+				</div>
+				<div id="managerBox">
+					<h2>Bertram Gilfoyle</h2>
+					<h3>Property Manager</h3>
+					<div id="contactType">
+						<ul>
+							<li>Office:</li>
+							<li>Cell:</li>
+							<li>Fax:</li>
+							<li>Email:</li>
+						</ul>				
+					</div>
+					<div id="contactNum">
+						<ul>
+							<li>(866) 275-9080</li>
+							<li>(347) 555-5555</li>
+							<li>(866) 275-9080</li>
+							<li>Cgumbs@dummyaccount.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="dashProperties">
+			<div id="propertyTop">
+					<div id="dashGallery">
+						<ul>
+							<li>
+								<a><img src="images/bedroom.jpg" alt=""></a>
+								<a><img src="images/bldg1.jpg"  alt=""></a>
+								<a><img src="images/bedroom.jpg" alt=""></a>
+								<a><img src="images/bldg1.jpg"  alt=""></a>
+							</li>
+							<li>
+								<a><img src="images/bedroom.jpg" alt=""></a>
+								<a><img src="images/bldg1.jpg"  alt=""></a>
+								<a><img src="images/bedroom.jpg" alt=""></a>
+								<a><img src="images/bldg1.jpg"  alt=""></a>
+							</li>
+							<li>
+								<a><img src="images/bedroom.jpg" alt=""></a>
+								<a><img src="images/bldg1.jpg"  alt=""></a>
+								<a><img src="images/bedroom.jpg" alt=""></a>
+								<a><img src="images/bldg1.jpg"  alt=""></a>
+							</li>
+							<li>
+								<a><img src="images/bedroom.jpg" alt=""></a>
+								<a><img src="images/bldg1.jpg"  alt=""></a>
+								<a><img src="images/bedroom.jpg" alt=""></a>
+								<a><img src="images/bldg1.jpg"  alt=""></a>
+							</li>
+						</ul>
+					</div>
+					<div id="vacancyBox">
+						 <h3>Vacancy:</h3>
+						 <h1>3</h1>
+						 <h2>Units</h2>
+					</div>
+				</div>
+			<div id="myProperties">
+				<div class="myRental">
+				<a href="listing.html">
+					<div class="priceCircle">
+						<h2>$1200</h2>
+						<p>Occupied</p>
+					</div>
+					<div class="rentalHeading">
+					<h2>123 Main Street Drive</h2>
+					<h2>Detroit, Michigan 12345</h2>
+					<h3>3 Beds - 2 Bath</h3>
+					</div>
+					</a>
+				</div>
+				<div class="myRental">
+				<a href="listing.html">
+					<div class="priceCircle vacant">
+						<h2>$1200</h2>
+						<p>Vacant</p>
+					</div>
+					<div class="rentalHeading">
+					<h2>123 Main Street Drive</h2>
+					<h2>Detroit, Michigan 12345</h2>
+					<h3>3 Beds - 2 Bath</h3>
+					</div>
+					</a>
+				</div>
+				<div class="myRental">
+				<a href="listing.html">
+					<div class="priceCircle vacant">
+						<h2>$1200</h2>
+						<p>Vacant</p>
+					</div>
+					<div class="rentalHeading">
+					<h2>123 Main Street Drive</h2>
+					<h2>Detroit, Michigan 12345</h2>
+					<h3>3 Beds - 2 Bath</h3>
+					</div>
+				</a>
+				</div>
+				<div class="myRental">
+				<a href="listing.html">
+					<div class="priceCircle vacant">
+						<h2>$1200</h2>
+						<p>Vacant</p>
+					</div>
+					<div class="rentalHeading">
+					<h2>123 Main Street Drive</h2>
+					<h2>Detroit, Michigan 12345</h2>
+					<h3>3 Beds - 2 Bath</h3>
+					</div>
+					</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+<!-- Footer -->
+<footer>
+	<div class="widthContainer">
+		<div class="footSection">
+			<ul>
+				<li id="navigationTxt">
+					<h3>Links:</h3>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Partners</a></li>
+							<li><a href="">Terms &amp; Conditions</a></li>
+							<li><a href="">Privacy Policy</a></li>
+						</ul>
+				</li>
+				<li id="socialIcons">
+					<h3>Connect:</h3>
+						<ul>
+							<li>
+								<a href=""><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-pied-piper-pp fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-paypal fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-snapchat-square fa-2x" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href=""><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa fa-vimeo-square fa-2x" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i></a>
+						</ul>
+				</li>
+			</ul>
+		<p id="copy">&copy; 2016 Global Manage, LLC. All Rights Reserved.</p>
+	</div>
+</footer>
+</body>
+</html>
